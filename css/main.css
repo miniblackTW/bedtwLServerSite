@@ -5,6 +5,32 @@ body {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
 }
+.navbar {
+    background-color: #ffffff; /* Same as container background */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    border-radius: 1em;
+    margin: 1em auto;
+    max-width: 800px;
+}
+
+.navbar a {
+    color: #333; /* Same as text color */
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+}
+
+.navbar a:hover {
+    color: #007BFF; /* Match button hover */
+    transform: scale(1.05);
+}
 
 .container {
     max-width: 800px;
