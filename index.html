@@ -6,8 +6,29 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="icon" href="/favicon.ico">
     <title>bedtwL Minecraft Server</title>
+    <style>
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+    </style>
 </head>
 <body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="https://bedtwL.com/api-docs.html">API Docs</a>
+    </div>
+
     <div class="container">
         <h1>Welcome to bedtw<span class="highlight">L</span> Server</h1>
         <p>Explore exciting game modes: Free-for-All and SMP worlds.</p>
@@ -47,7 +68,7 @@
                     <li><strong>Armored Elytra:</strong> Soar through the skies with added defense.</li>
                     <li><strong>Dynamic Economy:</strong> Trade and grow wealth with in-game currency.</li>
                 </ul>
-            </div>            
+            </div>
             <div class="server-item">
                 <h2>SMP5: NoEnd Survival</h2>
                 <p>Challenge yourself with extended survival features:</p>
@@ -59,6 +80,7 @@
             </div>
         </div>
     </div>
+
     <div class="container">
         <h1>News</h1>
         <p>The news for new feature or server status</p>
@@ -80,6 +102,7 @@
             </div>
         </div>
     </div>
+
     <script>
         function copyIP() {
             navigator.clipboard.writeText("bedtwL.com").then(() => {

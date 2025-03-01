@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="/favicon.ico">
+    <title>bedtwL Minecraft Server</title>
+    <style>
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .api-container {
+            background: #222;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: monospace;
+        }
+        .api-title {
+            color: #4CAF50;
+        }
+        .api-target {
+            color: #4CAF50;
+        }
+        .api-path {
+            color: #ff9800;
+            font-weight: bold;
+        }
+        .api-query {
+            color: #00bcd4;
+        }
+        .api-return {
+            color: #f44336;
+        }
+        .datatype {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .description {
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="https://bedtwL.com/api-docs.html">API Docs</a>
+    </div>
+    <div class="container">
+        <h1>Welcome to bedtw<span class="highlight">L</span> Server API Docs</h1>
+        <p>Developer's space.</p>
+
+        <div class="server-list">
+        <div class="server-item">
+           <h4 class="api-target">bedtwL Server Player Global Stats</h4>
+            <p><span class="api-path">API Path:</span> /api/v1/player/global</p>
+            <p><span class="api-query">Query:</span> player (string) - Player name or UUID</p>
+            <p><span class="api-return">Returns:</span></p>
+            <div class="api-container">
+<pre>
+{
+    "coins": <span class="datatype">int</span> <span class="description"># Player Global Coins</span>,
+    "level": <span class="datatype">int</span> <span class="description"># Player Global levels</span>,
+    "xp": <span class="datatype">int</span> <span class="description"># Player Global exp</span>,
+    "name": <span class="datatype">string</span> <span class="description"># Player Name</span>,
+    "gift_count": <span class="datatype">int</span> <span class="description"># Player gift count</span>,
+    "uuid": <span class="datatype">string</span> <span class="description"># Player UUID</span>
+}
+</pre>
+        </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
