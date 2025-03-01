@@ -72,6 +72,44 @@
 </pre>
         </div>
         </div>
+
+        <br>
+        <div class="api-item server-item">
+           <h4 class="api-target">bedtwL Server Player FFA Stats</h4>
+            <p><span class="api-path">API Path:</span> /api/v1/player/bwffa</p>
+            <p><span class="api-query">Query:</span> player (string) - Player name or UUID</p>
+            <p><span class="api-return">Returns:</span></p>
+            <div class="api-container">
+<pre>
+{
+    "kills": <span class="datatype">int</span> <span class="description"># Player Total Kills</span>,
+    "best_killstreak": <span class="datatype">int</span> <span class="description"># Player Best Kill Streak</span>,
+    "skill": <span class="datatype">string</span> <span class="description"># Player Selected Skill</span>,
+    "skill_level": <span class="datatype">int</span> <span class="description"># Player Skill Level</span>,
+    "last_killstreak": <span class="datatype">int</span> <span class="description"># Player Last Kill Streak</span>,
+    "deaths": <span class="datatype">int</span> <span class="description"># Player Total Deaths</span>
+}
+</pre>
+        </div>
+        </div>
+        <br>
+        <div class="api-item server-item">
+           <h4 class="api-target">bedtwL Server Player Current Status</h4>
+            <p><span class="api-path">API Path:</span> /api/v1/player/proxy</p>
+            <p><span class="api-query">Query:</span> player (string) - Player name or UUID</p>
+            <p><span class="api-return">Returns:</span></p>
+            <div class="api-container">
+<pre>
+{
+    "server": <span class="datatype">string</span> <span class="description"># Player's Current Server</span>,
+    "ping": <span class="datatype">int</span> <span class="description"># Player's Ping in Milliseconds</span>,
+    "name": <span class="datatype">string</span> <span class="description"># Player Name</span>,
+    "uuid": <span class="datatype">string</span> <span class="description"># Player UUID</span>
+}
+</pre>
+        </div>
+        </div>
+
         </div>
     </div>
 </body>
