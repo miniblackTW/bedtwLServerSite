@@ -142,6 +142,71 @@ a:hover {
     color: #007BFF;
 }
 
+.api-container {
+            background: #222;
+            color: #fff;.navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+            padding: 20px;
+            border-radius: 10px;
+            font-family: monospace;
+        }
+        .api-title {
+            color: #4CAF50;
+        }
+        .api-target {
+            color: #4CAF50;
+        }
+        .api-path {
+            color: #ff9800;
+            font-weight: bold;
+        }
+        .api-query {
+            color: #00bcd4;
+        }
+        .api-return {
+            color: #f44336;
+        }
+        .datatype {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .description {
+            color: #999;
+        }
+
+
+.stats-input {
+    border-radius: 0.5em;
+    height: 40px;
+    width: 300px;
+    padding: 0 10px;
+    background-color: #f0f8ff;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.stats-submit {
+    height: 40px;
+    width: 100px;
+    margin-left: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.stats-submit:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
 @media (max-width: 700px) {
     .container {
         padding: 1em;
